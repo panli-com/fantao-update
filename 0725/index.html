@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="https://img2.6.guapin.com/fantao/img/logo@160.png" type="image/ico" rel="shortcut icon" />
+    <title>新番淘</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./build/css/app.css?v3.0">
+    <!--[if lt IE 9]>
+        <script type="text/javascript">
+            alert("你的浏览器实在太太太太太太旧了!放学别走，升级完浏览器再说")
+            window.location.href="http://browsehappy.com"
+			var console = { log: function() {} };
+        </script>
+        <script src="https://cdn.bootcss.com/html5shiv/r29/html5.js"></script>
+    <![endif] -->
+</head>
+
+<body class="bg-color_fff bg" style="padding-top: 80px;" >
+   <div class="app w1200 m-auto">
+        <img class="logo" src="./build/img/logo.png" alt="" srcset="">
+
+        <section class="dis-top">
+            <div class="fl" style="width:440px;padding-left: 130px;padding-top: 100px;">
+                <h3>Panli 即将升级为 「番淘」</h3>
+                <h5>品牌、服务全面升级，敬请期待新网站</h5>
+            </div>
+            <div class="fr"  style="width:570px;">
+                <img src="./build/img/MacBookSilver.png" alt="">
+            </div>
+        </section>
+
+        <section class="dis-info">
+            <div class="info-box">
+                <div class="info-wrap">
+                    <h6>手机端率先体验</h6>
+                    <div class="qrcode-box">
+                        <div class="text-center fl v1">
+                            <img src="./build//img/qrcode.png" alt="" srcset="">
+                            <div class="ft_14">
+                                <p>关注公众号“番淘服务号”</p>
+                                <a href="javascript:void(0);" class="color ft_13">关注公众号“番淘服务号”</a>
+                            </div>
+                        </div>
+                        <div class="text-center fl v2">
+                            <div class="qrcode" id="qrcode">
+                            </div>
+                            <div class="ft_14">
+                                <p>扫码下载新APP“番淘”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-box end">
+                <div class="info-wrap">
+                    <h6>历史订单、余额等为您保留</h6>
+                    <div class="go-order">
+                        <a href="http://www.Panli.com" class="color">访问旧版 Panli.com ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="height: 130px"></section>
+   </div>
+</body>
+<script src="./build/js/app.js?v3"></script>
+<script type="text/javascript">
+window.onload = function () {
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        width : 100,
+        height : 100
+    })
+    qrcode.make("https://zanjs.com");
+}
+</script>
+
+</html>

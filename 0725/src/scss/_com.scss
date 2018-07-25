@@ -1,0 +1,48 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+  *zoom: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.hide{
+  display: none;
+}
+
+.w{
+  width: 100%;
+}
+
+.strong{
+  font-weight: bold;
+}
+
+.v-align_top{
+  vertical-align: top
+}
+
+.v-align_mid{
+  vertical-align: middle;
+}

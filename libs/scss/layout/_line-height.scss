@@ -1,0 +1,9 @@
+// line height
+.line-height {
+  @for $i from 0 through 100 {
+    &_#{$i} {
+      line-height: #{$i}px;
+    }
+  }
+  
+}
