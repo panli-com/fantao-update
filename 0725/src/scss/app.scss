@@ -30,16 +30,18 @@
 .dis-info {
   clear: both;
   overflow: hidden;
+  margin-top: -40px;
 }
 
 .info-box {
   width: 600px;
-  height: 420px;
+  height: 380px;
   float: left;
-  background: url(../img/bg-s.png) no-repeat -25px 0;
+  background: url(../img/bg-s.png) no-repeat -25px -10px;
+  background-size: 660px 380px;
   &.end {
     // background-color: aquamarine;
-    background-position: -40px 0;
+    background-position: -40px -10px;
     .info-wrap {
       padding-left: 48px;
     }
@@ -90,12 +92,14 @@
 }
 
 .info-wrap {
-  padding: 30px 20px;
+  padding: 20px 20px;
   padding-left: 60px;
   color: #333;
   h6 {
     font-size: 17px;
     height: 25px;
+    margin: 15px;
+    padding-top: 20px;
     line-height: 25px;
     padding-left: 10px;
     // border-left: 4px solid #333;
